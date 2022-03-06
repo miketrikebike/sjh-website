@@ -12,7 +12,7 @@ nav {
 }
 
 .hero-image {
-	background-image: url("__/images/hero-image-mockup.png");
+	background-image: url("/images/hero-image-mockup.png");
 	height: 300px;
 	background-position: center;
 	background-repeat: no-repeat;
