@@ -1,14 +1,36 @@
 @charset "UTF-8";
 /* CSS Document */
 
-header {
-	background-color: aliceblue;
-	width: auto;
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 10px;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-areas:
+	'logo topnav topnav'
+	'hero hero hero'
+	'info-container-left-1 info-container-middle-1 info-container-right-1'
+	'footer-left footer-middle footer-right'
+	'site-creds site-creds site-creds';
+	gap: 20px;
+	height: 100vh;
+	/*grid-template-columns: repeat(5, 200px);*/
+	/*grid-template-columns: auto auto auto;*/
+
 }
 
 
-nav {
-	
+
+.hero {
+	grid-area: hero;
+	max-height: 300px;
 }
 
 .hero-image {
@@ -18,40 +40,79 @@ nav {
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
-	
-	}
+}
+
 .hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: yellow;
 }
 
-main {
-	
-	background-color: yellow;
-	width: 100%;
+
+
+.logo {
+	grid-area: logo;
+	width: auto;
+	min-height: 50px;
+	background-color: blue;
 }
 
-/*hero {
-	background-image: url("images/hero-image-mockup.png");
-	height: 100%;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}*/
+.info-container-left-1 {
+	grid-area: info-container-left-1;
+}
+.info-container-middle-1 {
+	grid-area: info-container-middle-1;
+}
+.info-container-right-1 {
+	grid-area: info-container-right-1;
+}
 
-
-
-
-
-
-
-
-
-footer {
+/* footer {
 	width: 100%;
-	background-color: beige;
+	background-color: gray;
+} */
+
+
+.topnav {
+	grid-area: topnav;
+	margin: auto;
+	/* overflow: hidden; */
+	background-color: aqua;
+}
+
+.topnav a {
+	float: left;
+	color: black;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+	font-size: 1.2rem;
+}
+
+.topnav a:hover {
+	background-color: azure;
+	color: black;
+}
+
+.topnav a.active {
+	background-color: bisque;
+	color: red;
+}
+.footer-left {
+	grid-area: footer-left;
+}
+
+.footer-middle {
+	grid-area: footer-middle;
+}
+
+.footer-right {
+	grid-area: footer-right;
+}
+
+.site-creds {
+	grid-area: site-creds;
 }
