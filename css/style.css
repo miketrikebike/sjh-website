@@ -25,6 +25,28 @@ body {
 	line-height: 1.4;
 }
 
+.phone-number {
+	grid-area: navigation;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 1.5em;
+}
+
+
+.fa {
+	grid-area: navigation;
+	color: var(--primary);
+	font-size: 1.5em;
+}
+
+/* .phone {
+	grid-area: navigation;
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 1.5em;
+
+} */
 .btn {
 	display: inline-block;
 	background: var(--primary);
@@ -37,14 +59,48 @@ body {
 img {
 	max-width: 100%;
 }
+.service-image {
+	display: flex;
+	margin: auto;
+	width: 250px;
+	height: 300px;
+	border: 2px black dotted;
+}
 
 .top-container {
 	display: grid;
 	gap: 10px;
+	align-items: center;
+	justify-items: center;
 	grid-template-areas: 
-		'logo topnav topnav'
+		'logo navigation navigation'
 		'hero hero hero';
 	background: var(--light);
+}
+
+.navigation {
+	grid-area: navigation;
+}
+
+p.slogan {
+	grid-area: logo;
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
+}
+
+p.slogan-2 {
+	grid-area: navigation;
+	font-size: 2em;
+	font-style: italic;
+	text-align: center;
+}
+
+.website {
+	grid-area: navigation;
+	text-align: center;
+	font-size: 1.5em;
+	color: var(--primary);
 }
 
 .hero {
@@ -77,7 +133,8 @@ img {
 
 .logo {
 	grid-area: logo;
-	min-width: 250px;
+	display: block;
+	min-width: 350px;
 	padding: 1em;
 	}
 
@@ -134,6 +191,8 @@ img {
 }
 
 .footer-container {
+	height: 250px;
+	margin: auto;
 	background: var(--light);
 	text-align: center;
 	padding: 1.5rem 2rem;
