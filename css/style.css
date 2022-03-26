@@ -271,12 +271,27 @@ h2.service-title {
 }
 
 .footer-container {
-	height: 250px;
+	height: auto;
 	margin: 1em;
 	background: var(--light);
 	text-align: left;
 	padding: 1.5rem 2rem;
 	font-size: large;
+}
+.footer-container img {
+	padding-bottom: 1em;
+}
+
+.footer-left p {
+	padding-bottom: 1em;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+	height: 400px;
+	/* The height is 400 pixels */
+	width: 100%;
+	/* The width is the width of the web page */
 }
 
 .site-creds {
