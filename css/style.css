@@ -248,8 +248,10 @@ h2.middle-heading {
 h2.service-title {
 	font-size: 2em;
 	line-height: 1em;
-	padding-bottom: .5rem;
+	padding: 0;
 }
+/* Footer Area */
+
 
 .footer {
 	background: var(--light);
@@ -282,6 +284,19 @@ h2.service-title {
 	padding-bottom: 1em;
 }
 
+.footer-left a {
+	text-decoration: none;
+	color: var(--primary);
+	font-weight: bold;
+}
+
+.footer-middle img {
+	display: block;
+	max-width: 200px;
+	margin: auto;
+	padding: 10px 0;
+}
+
 /* Set the size of the div element that contains the map */
 #map {
 	height: 400px;
@@ -302,6 +317,10 @@ h2.service-title {
 		display: grid;
 		justify-content: center;
 	}
+	
+	/* html {
+		margin: 0;
+	} */
 
 	 .top-container {
 		 grid-template-areas: 
@@ -362,13 +381,16 @@ h2.service-title {
 
  }
 
- @media(max-width: 500px) {
-	 
-	.wrapper {
-		/* display: grid; */
-		/* box-sizing: border-box; */
+ @media(max-width: 520px) {
 
+
+	body {
+		background-color: white;
+		margin: 0;
+		padding: 0;
+		font-family: Arial, Helvetica, sans-serif;
 	}
+	 
 
 	.topnav a {
 		padding: .2em;
@@ -381,7 +403,7 @@ h2.service-title {
 
 	p.slogan-2 {
 		display: flex;
-		font-size: 16px;
+		font-size: 18px;
 		margin: auto;
 	}
 
@@ -399,8 +421,10 @@ h2.service-title {
 			min-height: 150px;
 		}
 
-		.hero-text h1 {
-			font-size: 1em;
+		.hero-text  {
+			min-width: 75%;
+			font-size: .6em;
+	
 		}
 
 		.btn a {
@@ -422,39 +446,53 @@ h2.service-title {
 		}
 
 		.large-heading {
-			margin: 0;
-			padding: 0 1em;
+			padding: .5em;
 		}
 
 		.large-heading h2 {
+			width: 90%;
 			font-size: 1em;
-			margin: auto;
-			padding: .2em 1em;
+		}
+
+		.top-list {
+			display: none;
 		}
 
 		.middle-heading {
-	    margin: auto;
+			width: 100%;
+	    margin: 0;
 		}
 
 		h2.middle-heading {
+			width: 100%;
 			background-color: var(--primary);
 			color: var(--light);
 			font-size: 1.2em;
-			margin: auto;
-			padding: .5em 3em;
 		}
 
 		.services {
-			display: grid;
-		 	grid-template-columns: 1fr;
+			width: 100%;
+			display: block;
+			/* margin: auto; */
+		 	/* grid-template-columns: 1fr; */
 		 }
 
 		.service-topic {
+			background-color: #218e4110;
+;
+		}
+
+		h2.service-title {
+			padding: 0 5px;
+		}
+
+		.service-topic p {
+			text-align: center;
+			width: 90%;
 			margin: auto;
-			padding: 1em;
 		}
 		.footer {
-			display: grid;
+			display: block;
 		 	grid-template-columns: 1fr;
 		 }
 
