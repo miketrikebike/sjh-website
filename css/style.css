@@ -250,6 +250,24 @@ h2.service-title {
 	line-height: 1em;
 	padding: 0;
 }
+
+.services-list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	width: 100%;
+	margin: auto;
+	font-size: 1.2em;
+}
+.services-list h2 {
+			background-color: var(--primary);
+			color: var(--light);
+			width: 100%;
+			margin: auto;
+			padding: 0 1em;
+		}
+.services-list li {
+	padding: .2rem;
+}
 /* Footer Area */
 
 
@@ -260,6 +278,10 @@ h2.service-title {
 	grid-template-columns: repeat(3, 1fr);
 	margin: 1em;
 
+}
+
+.footer ul {
+	padding-bottom: 1em;
 }
 
 .footer h3 {
@@ -359,6 +381,41 @@ h2.service-title {
 	 	grid-column-end: 3;
 	 	grid-column: span 2;
 	 }
+
+	 .services-list {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			width: 100%;
+			margin: auto;
+			padding: auto;
+			font-size: 1.2em;
+	}
+		.services-list h2 {
+			background-color: var(--primary);
+			color: var(--light);
+			text-align: center;
+			width: 100%;
+			margin: auto;
+			padding: 0 1em;
+		}
+	.services-list li {
+			padding: .2rem;
+	}
+	.services-3:nth-child(3) {
+	 	grid-column-end: 3;
+	 	grid-column: span 2;
+		margin: auto;
+		width: 100%;
+	 }
+	
+	.services-3 h2 {
+		text-align: center;
+	}
+	.services-3 ul {
+		display: table;
+		margin: auto;
+		
+	}
 
 	 
 	 .footer {
@@ -491,6 +548,31 @@ h2.service-title {
 			width: 90%;
 			margin: auto;
 		}
+
+		.services-list {
+			display: block;
+			grid-template-columns: repeat(1, 1fr);
+			width: 100%;
+			margin: auto;
+			padding: auto;
+			font-size: 1.2em;
+		}
+
+		.services-1 ul {
+		display: table;
+		margin: auto;
+		}
+
+		.services-2 ul {
+		display: table;
+		margin: auto;
+		}
+
+		.services-3 ul {
+		display: table;
+		margin: auto;
+		}
+
 		.footer {
 			display: block;
 		 	grid-template-columns: 1fr;
@@ -499,4 +581,7 @@ h2.service-title {
 		.site-creds {
 			text-align: center;
 		}
+		
+		
+		
  	}
