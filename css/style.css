@@ -333,8 +333,61 @@ h2.service-title {
 	margin: 1em;
 }
 
+/* .form-container {
+	box-sizing: border-box;
+	margin: 30px auto;
+	padding: 0;
+} */
 
+.form-wrap {
+	max-width: 70%;
+	background: #fff;
+	/* background: #b9eec910; */
+	padding: 15px 25px;
+	margin: 30px auto;
+}
 
+.form-wrap h2, .form-wrap p {
+	text-align: center;
+}
+
+.form-wrap .form-group {
+	margin-top: 15px;
+}
+
+.form-wrap .form-group label {
+	display: block;
+}
+
+.form-group input {
+	width: 100%;
+	padding: 10px;
+	border: #218e41 1px solid;
+	border-radius: 5px;
+}
+
+.form-group textarea {
+	width: 100%;
+	padding: 10px;
+	border: #218e41 1px solid;
+	border-radius: 5px;
+}
+.form-wrap button {
+	margin: auto;
+	display: block;
+	width: 40%;
+	padding: 10px;
+	margin-top: 20px;
+	border-radius: 5px;
+	background: var(--primary);
+	color: #fff;
+	cursor: pointer;
+	font-size: large;
+}
+
+.form-wrap button:hover {
+	background: #218e4190;
+}
 /* Media Queries */
 
  @media(max-width: 900px) {
@@ -497,7 +550,6 @@ h2.service-title {
 			margin: auto;
 			width: 100%;
 			max-width: 500px;
-			background-color: var(--primary)
 		}
 
 		.top-banner h4 {
