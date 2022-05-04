@@ -269,6 +269,15 @@ h2.service-title {
 	padding: .2rem;
 }
 
+.services-list a {
+	text-decoration: none;
+	color: #000;
+}
+
+.services-list a:hover {
+	text-decoration: none;
+	color: var(--primary);
+}
 
 /* Footer Area */
 
@@ -388,6 +397,27 @@ h2.service-title {
 .form-wrap button:hover {
 	background: #218e4190;
 }
+
+.service-topic-area {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.service-topic-area .image-holder img {
+	max-width: 400px;
+	min-width: 200px;
+	margin: auto;
+	padding: 1em;
+}
+
+.service-topic-area > p {
+	font-size: 1.5em;
+	width: 80%;
+	text-align: center;
+}
+
+
 /* Media Queries */
 
  @media(max-width: 900px) {
@@ -397,10 +427,6 @@ h2.service-title {
 		justify-content: center;
 	}
 	
-	/* html {
-		margin: 0;
-	} */
-
 	 .top-container {
 		 grid-template-areas: 
 		 "logo logo"
@@ -473,7 +499,19 @@ h2.service-title {
 		margin: auto;
 		
 	}
+	.service-topic-area .image-holder img {
+		max-width: 300px;
+		/* min-width: 250px; */
+		margin: auto;
+		padding: 1em;
+	}
 
+	.service-topic-area > p {
+	font-size: 1.2em;
+	width: 80%;
+	padding: 1em;
+	text-align: center;
+	}
 	 
 	 .footer {
 	 	grid-template-columns: repeat(2, 1fr);
@@ -627,6 +665,19 @@ h2.service-title {
 		.services-3 ul {
 		display: table;
 		margin: auto;
+		}
+
+		.service-topic-area .image-holder img {
+		display: block;
+		max-width: 400px;
+		margin: auto;
+		}
+
+		.service-topic-area > p {
+		font-size: 1em;
+		width: 80%;
+		padding: .5em;
+		text-align: center;
 		}
 
 		.footer {
