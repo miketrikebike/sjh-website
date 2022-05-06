@@ -342,6 +342,38 @@ h2.service-title {
 	margin: 1em;
 }
 
+.about-us-wrap {
+	display: block;
+	max-width: 80%;
+	background: #fff;
+	padding: 15px 25px;
+	margin: 30px auto;
+}
+
+.about-us-wrap p {
+	font-size: 1.4em;
+	margin: auto;
+	padding: 1em;
+}
+
+.about-us-wrap img {
+	float: left;
+	width: 400px;
+	margin: auto;
+	padding: 1em;
+	padding-top: 2em;
+}
+
+.about-us-wrap h2 {
+	font-size: 2em;
+	margin: auto;
+	padding: 1em;
+}
+
+.about-us-wrap a {
+	text-decoration: none;
+	color: var(--primary);
+}
 /* .form-container {
 	box-sizing: border-box;
 	margin: 30px auto;
@@ -678,6 +710,21 @@ h2.service-title {
 		width: 80%;
 		padding: .5em;
 		text-align: center;
+		}
+
+		.about-us-wrap p ,
+		.about-us-wrap h2 {
+			text-align: center;
+			padding: 0;
+		}
+
+		.about-us-wrap p {
+			padding-bottom: .5em;
+		}
+
+		.about-us-wrap img {
+			max-width: 350px;
+			margin: auto;
 		}
 
 		.footer {
