@@ -134,7 +134,7 @@ p.slogan-2 {
 	grid-area: hero;
 	min-height: 300px;
 	width: 100%;
-	background: white url(/images/hero-image-mockup.png);
+	background: white url(/images/curbside-junk-removal-header.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -142,7 +142,7 @@ p.slogan-2 {
 }
 
 .hero-text {
-	background-color: #218e4180;
+	background-color: #13723199;
 	padding: 1em;
 	border-radius: .5em;
 	text-align: center;
@@ -342,7 +342,12 @@ h2.service-title {
 	margin: 1em;
 }
 
-.about-us-wrap {
+.site-creds a {
+	text-decoration: none;
+	color: var(--primary);
+}
+
+.about-us-wrap, .faq-wrap {
 	display: block;
 	max-width: 80%;
 	background: #fff;
@@ -364,16 +369,41 @@ h2.service-title {
 	padding-top: 2em;
 }
 
-.about-us-wrap h2 {
+.about-us-wrap h2,
+.faq-wrap h2 {
 	font-size: 2em;
 	margin: auto;
 	padding: 1em;
 }
 
-.about-us-wrap a {
+.about-us-wrap h2 {
+	padding-bottom: 0;
+}
+
+.about-us-wrap a,
+.faq-wrap a {
 	text-decoration: none;
 	color: var(--primary);
 }
+
+.faq-wrap p {
+	font-size: 1.2em;
+	margin: auto;
+}
+
+.faq-wrap h2 {
+	padding: .2em 0;
+}
+
+.faq-answer {
+	color: var(--primary);
+	padding-bottom: 1em;
+}
+
+.my-faq-list {
+	font-weight: bold;
+}
+
 /* .form-container {
 	box-sizing: border-box;
 	margin: 30px auto;
@@ -448,6 +478,11 @@ h2.service-title {
 	width: 80%;
 	text-align: center;
 }
+
+.service-topic-area a {
+		text-decoration: none;
+		color: var(--primary);
+	}
 
 
 /* Media Queries */
@@ -544,6 +579,7 @@ h2.service-title {
 	padding: 1em;
 	text-align: center;
 	}
+
 	 
 	 .footer {
 	 	grid-template-columns: repeat(2, 1fr);
