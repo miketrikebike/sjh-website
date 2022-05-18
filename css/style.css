@@ -186,7 +186,10 @@ p.slogan-2 {
 	line-height: 1;
 	padding: 1.5em;
 	margin: auto;
+}
 
+.large-heading h1 {
+	font-size: 1.5em;
 }
 
 .top-list {
@@ -517,7 +520,9 @@ h2.service-title {
 	 	text-align: center;
 	 }
 		
-		
+	 .large-heading h1 {
+		 font-size: 1.5em;
+	 }
 	 .services {
 		 grid-template-columns: repeat(2, 1fr);
 	 }
@@ -665,13 +670,15 @@ h2.service-title {
 		}
 
 		.large-heading {
-			padding: .5em;
+			padding: .3em;
 		}
 
-		.large-heading h2 {
+		.large-heading  h1 {
 			width: 90%;
-			font-size: 1em;
+			font-size: 1.2em;
 		}
+
+		
 
 		.top-list {
 			display: none;
