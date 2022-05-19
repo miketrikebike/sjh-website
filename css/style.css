@@ -470,7 +470,7 @@ h2.service-title {
 }
 
 .service-topic-area .image-holder img {
-	max-width: 400px;
+	max-width: 600px;
 	min-width: 200px;
 	margin: auto;
 	padding: 1em;
@@ -607,6 +607,7 @@ h2.service-title {
  }
 
  @media(max-width: 520px) {
+
 
 
 	body {
@@ -755,6 +756,11 @@ h2.service-title {
 		text-align: center;
 		}
 
+		.about-us-wrap {
+			justify-content: center;
+		  margin: auto;
+		}
+
 		.about-us-wrap p ,
 		.about-us-wrap h2 {
 			text-align: center;
@@ -766,8 +772,7 @@ h2.service-title {
 		}
 
 		.about-us-wrap img {
-			max-width: 350px;
-			margin: auto;
+			width: 100%;
 		}
 
 		.footer {
