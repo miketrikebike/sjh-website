@@ -60,22 +60,65 @@
 			<h1>FAQs - Mike's Junk Removal</h1>
 		</div>	
 
-		<!-- About Us -->
-	<div class="faq-wrap">
-				<h2>FAQs</h2>
-				<div class="my-faq-list">
-					<p>What forms of payment to we take?</p>
-					<p class="faq-answer">We take all major credit cards, venmo and cash.</p>
-					<p>Are you licensed and insured?</p>
-					<p class="faq-answer">Yes, we are fully licensed and insured.</p>
-					<p>Can you remove old sheds or old hot tubs?</p>
-					<p class="faq-answer">Absolutely, we can do light demolition work which would include old sheds (metal or wood) or old hot tubs.</p>
-					<p>What locations do you service?</p>
-					<p class="faq-answer">We serve Spokane and the surrounding area, Spokane Valley, and Post Falls, ID.</p>
-				</div><br>
-				<p>If you are needing a quote or have a question about our services you can reach out from our <a href="/contact.html" class="">contact form</a> or call us at <span><a href="tel:509-990-4500">(509) 990-4500</a></span>.</p>
+
+<div class="faq-wrap">
+				<h2 style="color: var(--primary); text-align: center">FAQs</h2>
+
+				<button class="accordion">What forms of payment do you take?</button>
+				<div class="panel">
+				<p>We take all major credit cards, Venmo and cash.</p>
+				</div>
+
+				<button class="accordion">Are you licensed and insured?</button>
+				<div class="panel">
+				<p>Yes, we are fully licensed and insured.</p>
+				</div>
+
+				<button class="accordion">Can you remove old sheds or hot tubs?</button>
+				<div class="panel">
+				<p>Absolutely, we can do light demolition work which would include old sheds (metal or wood) or old hot tubs. We can also remove smaller decks as well.</p>
+				</div>
+
+				<button class="accordion">What locations do you service?</button>
+				<div class="panel">
+				<p>We serve Spokane, Spokane Valley, Post Falls, ID and the surrounding areas.</p>
+				</div>
+
+				<button class="accordion">What items do you take?</button>
+				<div class="panel">
+				<p>We are a full-service junk removal business, so we remove most everything which includes household junk items, old furniture, old appliances and mattressess.</p>
+				</div>
+
+				<button class="accordion">Are there any items you don't take?</button>
+				<div class="panel">
+				<p>Yes, some hazardous waste we won't take depending on what it is. We also don't take rock or concrete unless it's a minimal amount.</p>
+				</div>
+				
+				<br>
+				<p style="padding: 18px; margin-top: 30px;">If you are needing a quote or have a question about our services you can reach out from our <a href="/contact.html" class="">contact form</a> or call us at <span><a href="tel:509-990-4500">(509) 990-4500</a></span>.</p>
 
 	</div>	
+
+<script>
+	var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
 
 			
 <!-- Footer Area -->
@@ -88,6 +131,7 @@
 					<p>Call Us: <span><a href="tel:509-990-4500">(509) 990-4500</a></span></p>
 					<p>Email: <a href="mailto:mike@spokanejunkhauling.com">mike@spokanejunkhauling.com</a></p>
 					<p>We are a licensed and insured junk removal company located in Spokane, WA. We remove all types of junk!</p>
+					<a href="/privacy.html" target="_blank">Privacy Info</a>
 					</div>
 				</div>	
 

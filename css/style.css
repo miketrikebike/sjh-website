@@ -20,6 +20,14 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+.privacy {
+	margin: 10px;
+	background-color: #fff;
+}
+
+.privacy h1 {
+	text-align: center;
+}
 /* .wrapper */
 
 .wrapper {
@@ -486,7 +494,53 @@ h2.service-title {
 		text-decoration: none;
 		color: var(--primary);
 	}
+/* FAQ Page Drop Down Start */
+/* Style the buttons that are used to open and close the accordion panel on FAQ page */
+.accordion {
+	font-size: 1.2em;
+	font-weight: bold;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
 
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/* .active, .accordion:hover {
+  background-color: #ccc;
+} */
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+	color: var(--primary);
+	font-weight: bold;
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+.topnav a.active::after {
+	content: none;
+}
+
+/* FAQ Page Drop Down End */
 
 /* Media Queries */
 
