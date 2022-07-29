@@ -485,6 +485,14 @@ h2.service-title {
 	padding: 1em;
 }
 
+.image-holder {
+	box-sizing: border-box;
+}
+
+.top-header-image img {
+	width: 760px;
+}
+
 .service-topic-area > p {
 	font-size: 1.5em;
 	width: 80%;
@@ -639,6 +647,10 @@ h2.service-title {
 	padding: 1em;
 	text-align: center;
 	}
+
+	.top-header-image img {
+	width: 576px;
+  }
 
 	 
 	 .footer {
@@ -810,6 +822,10 @@ h2.service-title {
 		padding: .5em;
 		text-align: center;
 		}
+
+		.top-header-image img {
+	   width: 360px;
+    }
 
 		.about-us-wrap {
 			justify-content: center;
