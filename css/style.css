@@ -635,7 +635,8 @@ h2.service-title {
 		
 	}
 	.service-topic-area .image-holder img {
-		max-width: 300px;
+		display: block;
+		max-width: 400px;
 		/* min-width: 250px; */
 		margin: auto;
 		padding: 1em;
