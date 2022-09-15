@@ -64,7 +64,10 @@ body {
 	border: 0;
 }
 
-
+.video {
+	margin: auto;
+	padding: 1em;
+}
 
 .top-container {
 	display: grid;
@@ -551,6 +554,14 @@ h2.service-title {
 
 /* FAQ Page Drop Down End */
 
+
+
+
+
+
+
+
+
 /* Media Queries */
 
  @media(max-width: 900px) {
@@ -566,12 +577,19 @@ h2.service-title {
 		 "navigation navigation"
 		 "hero hero";
 		}
+
    .top-banner h4 {
 		 display: flex;
 		 text-align: center;
 		 font-size: 1.5em;
 		 margin: auto;
 	 } 
+
+	 .large-heading {
+		width: 90%;
+		margin: auto;
+		padding: 1em;
+	 }
 
 	 h2.middle-heading {
 	 	display: grid;
@@ -667,12 +685,20 @@ h2.service-title {
 		 text-align: center;
 	 }
 
-	 /* .service-topic:last-child:nth-child(2n - 1) {
-		 grid-column-end: 3;
-		 grid-column: span 2;
-	 } */
+	 
 
  }
+
+
+
+
+
+
+
+
+
+
+
 
  @media(max-width: 520px) {
 
@@ -683,6 +709,20 @@ h2.service-title {
 		margin: 0;
 		padding: 0;
 		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.large-heading {
+		display: flex;
+		margin: auto;
+		padding: 1em;
+	 }
+
+	.video {
+		display: flex;
+		width: 80%;
+		text-align: center;
+		margin: auto;
+		padding: 1em;
 	}
 	 
 
@@ -851,6 +891,22 @@ h2.service-title {
 			display: block;
 		 	grid-template-columns: 1fr;
 		 }
+
+		.footer-left img {
+			display: flex;
+			margin: auto;
+			width: 80%;
+		 }
+
+		.footer-left {
+			text-align: center;
+		}
+		
+		 /* .footer-center {
+			text-align: center;
+		} */
+
+		
 
 		.site-creds {
 			text-align: center;
