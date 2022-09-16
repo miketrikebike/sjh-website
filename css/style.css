@@ -70,13 +70,6 @@ body {
 	padding: 1em;
 }
 
-ul {
-		margin-left: auto;
-		margin-right: auto;
-		width: 90%;
-	}
-
-
 .top-container {
 	display: grid;
 	/* gap: 5px; */
@@ -583,13 +576,6 @@ h2.service-title {
 		justify-content: center;
 	}
 	
-	ul {
-		margin-left: auto;
-		margin-right: auto;
-		width: 70%;
-	}
-
-
 	 .top-container {
 		 grid-template-areas: 
 		 "logo logo"
@@ -746,11 +732,6 @@ h2.service-title {
 		padding: 1em;
 	}
 	 
-	ul {
-		margin-left: auto;
-		margin-right: auto;
-		width: 70%;
-	}
 
 	.topnav a {
 		padding: .2em;
