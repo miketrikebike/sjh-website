@@ -67,6 +67,13 @@ body {
 	padding: 25px;
 
 }
+
+.junk-hauling {
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 800;
+	padding: 1em;
+}
 .fa {
 	grid-area: navigation;
 	color: black;
@@ -830,11 +837,27 @@ h2.service-title {
 			font-size: 1.2em;
 		}
 
-		
+		/* .top-list {
+			align-items: center;
+			width: 100%;
+			margin: auto;
+		} */
 
-		.top-list {
-			display: none;
+		.top-list ul {
+			display: block;
+			
 		}
+
+		.top-list li {
+			width: 100%;
+			font-style: italic;
+			font-size: 1.1rem;
+			padding: 5px 0px;
+		}
+
+		/* .top-list {
+			display: none;
+		} */
 
 		.middle-heading {
 			width: 100%;
