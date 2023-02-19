@@ -267,7 +267,7 @@ h2.middle-heading {
 }
 
 p {
-	padding-bottom: 1em;
+	padding-bottom: .5em;
 }
 
 /* Services */
@@ -298,7 +298,7 @@ p {
 h2.service-title {
 	font-size: 2em;
 	line-height: 1em;
-	padding: 0;
+	padding-bottom: 0.2em;
 }
 
 .services-list {
